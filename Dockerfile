@@ -20,3 +20,5 @@ FROM python:3.11-bookworm AS python
 ENV JAVA_HOME=/jre
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
 COPY --from=zulu-jdk20 /zulu-jre20 $JAVA_HOME
+
+ENTRYPOINT ["bash"]
