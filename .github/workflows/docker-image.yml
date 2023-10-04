@@ -28,9 +28,10 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./Dockerfile
           push: true
           platforms: linux/amd64
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/mc-zulu20-python3-env:${{ github.ref_name }}
             ${{ secrets.DOCKERHUB_USERNAME }}/mc-zulu20-python3-env:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
