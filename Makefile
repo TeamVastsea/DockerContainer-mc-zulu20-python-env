@@ -1,5 +1,5 @@
 IMAGE_NAME=mc-zulu20-python3-env
-IMAGE_VERSION=v1.0.2
+IMAGE_VERSION=v1.0.1
 build:
 	docker build -t $(IMAGE_NAME):$(IMAGE_VERSION) .
 
