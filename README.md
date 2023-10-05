@@ -34,6 +34,7 @@ make exec
 ## Developers
 
 - [Snowball_233](https://github.com/SnowballXueQiu)
+- [NanamiNakano](https://github.com/NanamiNakano)
 
 ## Guess you like
 
